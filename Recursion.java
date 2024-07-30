@@ -1,10 +1,4 @@
 
-import java.util.Scanner;
-
-
-
-//Print Number from 5 to 1
-// public class Recursion{
 
 //     public static void printNumber(int n){
 
@@ -138,4 +132,60 @@ import java.util.Scanner;
 // }
 
 
-//Prince x^n (Stack Height => currently number of element stored in stack) 
+//Prince x^n (Stack Height => n)
+//Stack Height = currently number of element stored in stack 
+
+// public class Recursion{
+
+//     public static int calculatePower(int x, int n){
+
+//         //base case
+//         if(n == 0){
+//             return 1;
+//         }
+//         if(x == 0){
+//             return 0;
+//         }
+
+//         int Xpnm1 = calculatePower(x, n-1);
+//         int xPower = x * Xpnm1;
+//         return xPower;
+//     }
+//     public static void main(String args[]){
+//         System.out.println(calculatePower(2, 5));
+//     }
+// }
+
+
+//Print x^n (Stack Height = logn)
+public class Recursion {
+
+    public static int calculatePower(int x, int n){
+
+        //Base case
+        if(n == 0){
+            return 1;
+        }
+        if(x == 0){
+            return 0;
+        }
+
+        //check if n is even
+        if(n % 2 == 0){
+            return calculatePower(x, n/2) * calculatePower(x, n/2) ;
+        }
+        else{
+            //check if x is odd
+            return calculatePower(x, n/2) * calculatePower(x, n/2) * x;
+        }
+    }
+
+    public static void main(String args[]){
+
+        //Given
+        int x = 2;
+        int n = 5;
+        int ans = calculatePower(x, n);
+        System.out.println("power is " + ans);
+    }
+}
