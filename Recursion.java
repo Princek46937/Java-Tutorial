@@ -158,34 +158,36 @@
 
 
 //Print x^n (Stack Height = logn)
-public class Recursion {
+// public class Recursion {
 
-    public static int calculatePower(int x, int n){
+//     public static int calculatePower(int x, int n){
 
-        //Base case
-        if(n == 0){
-            return 1;
-        }
-        if(x == 0){
-            return 0;
-        }
+//         //Base case
+//         if(n == 0){
+//             return 1;
+//         }
+//         if(x == 0){
+//             return 0;
+//         }
 
-        //check if n is even
-        if(n % 2 == 0){
-            return calculatePower(x, n/2) * calculatePower(x, n/2) ;
-        }
-        else{
-            //check if x is odd
-            return calculatePower(x, n/2) * calculatePower(x, n/2) * x;
-        }
-    }
+//         //check if n is even
+//         if(n % 2 == 0){
+//             return calculatePower(x, n/2) * calculatePower(x, n/2) ;
+//         }
+//         else{
+//             //check if x is odd
+//             return calculatePower(x, n/2) * calculatePower(x, n/2) * x;
+//         }
+//     }
 
-    public static void main(String args[]){
+//     public static void main(String args[]){
 
-        //Given
-        int x = 2;
-        int n = 5;
-        int ans = calculatePower(x, n);
-        System.out.println("power is " + ans);
-    }
-}
+//         //Given
+//         int x = 2;
+//         int n = 5;
+//         int ans = calculatePower(x, n);
+//         System.out.println("power is " + ans);
+//     }
+// }
+
+

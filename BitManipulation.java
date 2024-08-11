@@ -2,7 +2,6 @@
 import java.util.Scanner;
 
 
-    // public static void main(String args[]) {
 
         // Get Bit
         /*
@@ -12,7 +11,7 @@ import java.util.Scanner;
 
 
         // int n = 5; //0101
-        // int position = 3;
+        // int position = 3; //0011
         // int bitMask = 1<<position;
 
         // if((bitMask & n) == 0){
@@ -75,16 +74,5 @@ import java.util.Scanner;
         //     int newNumber = notBitMask & n;
         //     System.out.println(newNumber);
         // }
-
-
-
-    
-
-
-
-
-
-//     }
-// }
 
 
